@@ -11,7 +11,7 @@
 var getIndex = function(e) {
 */
 
-var thelist = document.getElementsByTagName("li");
+var lis = document.getElementsByTagName("li");
 
 removeEle = function() {
    
@@ -24,10 +24,17 @@ changeHead = function() {
 };
 
 
-
+addEle = function() {
+    var n = document.createElement("li");
+    n.innerHTML = "New thing";
+    var thelist = document.getElementById("thelist");
+    thelist.appendChild(n);
+}
     
 
-for (var i = 0; i < thelist.length; i++) {
-    thelist[i].addEventListener("click", removeEle);
-    thelist[i].addEventListener("mouseover", changeHead);
+for (var i = 0; i < lis.length; i++) {
+    lis[i].addEventListener("click", removeEle);
+    lis[i].addEventListener("mouseover", changeHead);
 }
+var thebutton = document.getElementById("b");
+b.addEventListener("click", addEle);
