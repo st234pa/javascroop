@@ -12,6 +12,7 @@ var getIndex = function(e) {
 */
 
 var lis = document.getElementsByTagName("li");
+var thelist = document.getElementById("thelist");
 
 removeEle = function() {
    
@@ -27,9 +28,9 @@ changeHead = function() {
 addEle = function() {
     var n = document.createElement("li");
     n.innerHTML = "New thing";
-    var thelist = document.getElementById("thelist");
+    
     thelist.appendChild(n);
-}
+};
     
 
 for (var i = 0; i < lis.length; i++) {
@@ -38,3 +39,16 @@ for (var i = 0; i < lis.length; i++) {
 }
 var thebutton = document.getElementById("b");
 b.addEventListener("click", addEle);
+
+var newlist = document.getElementById("newlist");
+var newbutton = document.getElementById"newbutton");
+
+addFib = function() {
+    var n = document.createElement("li");
+    
+    n.innerHTML = ;
+};
+
+
+newbutton.addEventListener("click", addFib);
+
