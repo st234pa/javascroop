@@ -12,10 +12,12 @@ var getIndex = function(e) {
 */
 
 removeEle = function(i) {
+    var thelist = document.getElementsByTagName("li");
     thelist[i].remove();
 };
 
 changeHead = function(i) {
+    var thelist = document.getElementsByTagName("li");
     var head = document.getElementById("h");
     head.innerHTML = thelist[i];
 };
