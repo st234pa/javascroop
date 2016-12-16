@@ -16,11 +16,11 @@ removeEle = function(i) {
 };
 
 changeHead = function(i) {
-    var head = document.getElementbyId("h");
+    var head = document.getElementById("h");
     head.innerHTML = thelist[i];
 };
 
-var thelist = document.getElementsbyTagName("li");
+var thelist = document.getElementsByTagName("li");
 for (var i = 0; i < thelist.length; i++) {
     thelist[i].addEventListener("click", removeEle);
     thelist[i].addEventListener("mouseover", changeHead);
