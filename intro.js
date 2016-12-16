@@ -21,7 +21,7 @@ changeHead = function(i) {
 };
 
 var thelist = document.getElementsbyTagName("li");
-for (int i = 0; i < thelist.length; i++) {
+for (var i = 0; i < thelist.length; i++) {
     thelist[i].addEventListener("click", removeEle);
     thelist[i].addEventListener("mouseover", changeHead);
 }
