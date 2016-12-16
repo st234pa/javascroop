@@ -11,21 +11,23 @@
 var getIndex = function(e) {
 */
 
-removeEle = function(i) {
-    var thelist = document.getElementsByTagName("li");
-    thelist[i].remove();
-};
-
-changeHead = function(i) {
-    var thelist = document.getElementsByTagName("li");
-    var head = document.getElementById("h");
-    head.innerHTML = thelist[i];
-};
-
 var thelist = document.getElementsByTagName("li");
+
+removeEle = function() {
+   
+    this.remove();
+};
+
+changeHead = function() {
+    var head = document.getElementById("h");
+    head.innerHTML = this.innerHTML;
+};
+
+
+
+    
+
 for (var i = 0; i < thelist.length; i++) {
     thelist[i].addEventListener("click", removeEle);
     thelist[i].addEventListener("mouseover", changeHead);
 }
-
-    
