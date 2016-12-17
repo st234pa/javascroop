@@ -1,16 +1,3 @@
-/*var changeList = function(e, i) {
-    thelist = document.getElementById("thelist");
-    if (e.type === "mousedown") {
-	thelist[i].remove();
-    }
-    else if (e.type === "") {
-    }
-    
-};
-
-var getIndex = function(e) {
-*/
-
 var lis = document.getElementsByTagName("li");
 var thelist = document.getElementById("thelist");
 
@@ -41,12 +28,20 @@ var thebutton = document.getElementById("b");
 b.addEventListener("click", addEle);
 
 var newlist = document.getElementById("newlist");
-var newbutton = document.getElementById"newbutton");
+var newbutton = document.getElementById("newbutton");
+
+var fib = function(i) {
+    if (i <  2) {
+	return 1;
+    }
+    else return fib(i-1) + fib(i-2);
+};
 
 addFib = function() {
     var n = document.createElement("li");
-    
-    n.innerHTML = ;
+    var i = newlist.children.length;
+    n.innerHTML = fib(i);
+    newlist.appendChild(n);
 };
 
 
