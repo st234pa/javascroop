@@ -37,7 +37,7 @@ var fib = function(i) {
     else return fib(i-1) + fib(i-2);
 };
 
-addFib = function() {
+var addFib = function() {
     var n = document.createElement("li");
     var i = newlist.children.length;
     n.innerHTML = fib(i);
