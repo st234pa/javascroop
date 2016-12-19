@@ -17,6 +17,8 @@ addEle = function() {
     n.innerHTML = "New thing";
     
     thelist.appendChild(n);
+    n.addEventListener("mouseover",changeHead)
+    n.addEventListener("click",removeEle)
 };
     
 
